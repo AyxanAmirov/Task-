@@ -3,11 +3,12 @@
 }
 
 .parent-elem {
-    border: 2px solid #cbcbcb;
+    border: 1px solid #cbcbcb;
 }
 
 .left-aside {
     height: 100vh;
+    position: fixed;
     background-color: #F1F1F1;
     padding: 20px 0;
     overflow-y: scroll;
@@ -70,4 +71,41 @@
 }
 .foot-aside:hover{
     background-color: #CCCCCC;
+}
+/* section */
+.section-body{
+    padding: 15px;
+}
+.section-head{
+    color: #4caf50;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.slider-image{
+    width: 100%;
+}
+.article{
+    margin-top: 30px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #c9c8c8;
+}
+.article-heads{
+font-size: 23px;
+}
+.space-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+.space-txts{
+    font-size: 20px;
+    display: flex;
+    gap: 5px;
 }
