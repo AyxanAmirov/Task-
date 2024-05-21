@@ -15,6 +15,10 @@ const nameRegister = document.getElementById("nameRegister");
 const emailRegister = document.getElementById("emailRegister");
 const messageRegister = document.getElementById("messageRegister");
 const emailValid = document.getElementById("emailValid");
+ 
+
+
+
 function changeSlider(img) {
   parentImage.src = img;
   childImages.forEach((image, i) => {
@@ -178,3 +182,5 @@ menuBar.addEventListener("click",()=>{
    asidePanel.classList.toggle("d-block")
    document.querySelector(".overlay").classList.toggle("active");
 })
+
+
