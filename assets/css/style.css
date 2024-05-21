@@ -1,18 +1,35 @@
-.main-elem {
-    padding: 0 3.4rem;
+.menu {
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    display: none;
 }
 
+.site-name {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400;
+}
+.toggle{
+    color: #fff;
+    font-size: 25px;
+}
 .parent-elem {
     border: 1px solid #cbcbcb;
 }
 
 .left-aside {
+
     height: 100vh;
+    max-height: 850px;
     position: fixed;
     background-color: #F1F1F1;
     padding: 20px 0;
     overflow-y: scroll;
 }
+
 
 .head {
     width: 120px;
@@ -168,7 +185,27 @@
 .foot {
     margin-top: 30px;
 }
-.required{
+
+.required {
     color: red;
     font-weight: bold;
 }
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 997; 
+  }
+  
+
+  
+  .overlay.active {
+    display: block; 
+  }

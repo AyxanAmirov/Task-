@@ -154,3 +154,27 @@ function sendMail(e) {
     messageRegister.className = "d-none";
   }
 }
+
+
+window.addEventListener('resize', updateScreenWidth);
+const mainElem = document.querySelector(".main-elem")
+function updateScreenWidth(){
+
+  let screenWidth = window.innerWidth;
+  if(screenWidth <= 993){
+    mainElem.classList.remove("container")
+  }else{
+    mainElem.classList.add("container")
+    document.querySelector(".overlay").classList.remove("active");
+
+  }
+}
+
+
+// toggle menu
+const menuBar = document.querySelector(".toggle")
+const asidePanel = document.querySelector(".aside-panel")
+menuBar.addEventListener("click",()=>{
+   asidePanel.classList.toggle("d-block")
+   document.querySelector(".overlay").classList.toggle("active");
+})

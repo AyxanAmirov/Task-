@@ -19,13 +19,20 @@
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/layout.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
   <!-- end -->
 </head>
 
 <body>
   <main class="container main-elem">
-    <div class="d-flex parent-elem">
-      <aside class="col-lg-3">
+    <nav class="menu">
+      <h3 class="site-name">Rental
+      </h3>
+      <i class="fa-solid fa-bars toggle"></i>
+    </nav>
+    <div class="d-flex  parent-elem">
+
+      <aside class="col-xl-3 col-lg-3 aside-panel ">
 
         <div class="left-aside">
           <div class="p-15">
@@ -68,11 +75,14 @@
             Contact
 
           </div>
+
         </div>
 
 
+
       </aside>
-      <section class="col-lg-10 section-body">
+      <div class="overlay"></div>
+      <section class="col-xl-9 col-lg-9 col-md-12 section-body">
         <h2 class="section-head">The Apartment</h2>
         <div class="slider">
           <div class="slider-elem">
@@ -192,13 +202,13 @@
             <i class="fa-solid fa-envelope"></i>
             <p>Email: mail@mail.com</p>
           </div>
-          <form class="email-form"  onsubmit="sendMail(event)">
+          <form class="email-form" onsubmit="sendMail(event)">
             <p>Questions? Go ahead, ask them:</p>
             <input type="text" class="email-inputs" id="nameInput" placeholder="Name" name="fullName">
             <p class="d-none " id="nameRegister">This field is required</p>
-            <input type="text" class="email-inputs"id="emailInput" placeholder="Email" name="email">
-            <p class="d-none " id="emailRegister" >This field is required</p>
-            <p class="d-none " id="emailValid" >Email is not Valid            </p>
+            <input type="text" class="email-inputs" id="emailInput" placeholder="Email" name="email">
+            <p class="d-none " id="emailRegister">This field is required</p>
+            <p class="d-none " id="emailValid">Email is not Valid </p>
             <input type="text" class="email-inputs" id="messageInput" placeholder="Message" name="message">
             <p class="d-none " id="messageRegister">This field is required</p>
             <div class="col-lg-3">
@@ -220,7 +230,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
   <script src="./assets/js/app.js"></script>
- 
+
 </body>
 
 </html>

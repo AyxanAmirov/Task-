@@ -84,9 +84,11 @@
   background-color: #fff;
   height: 56px;
 }
-.p-15{
+
+.p-15 {
   padding: 15px;
 }
+
 .pos-fix {
   position: fixed;
   z-index: 999999;
@@ -113,7 +115,7 @@
 }
 
 .d-block {
-  display: block;
+  display: block !important;
 }
 
 .flex-direction-column {
