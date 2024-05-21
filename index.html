@@ -37,10 +37,12 @@
                   in</span></label>
               <input id="checkIn" type="text" class="filter-input" placeholder="DDMMYYYY">
               <p class="d-none " id="reqIn">This field is required</p>
+              <p class="d-none " id="validIn">Format is not valid</p>
               <label for="checkOut" class="check"><i class="fa-solid fa-calendar-days "></i> <span>Check
                   out</span></label>
               <input id="checkOut" type="text" class="filter-input" placeholder="DDMMYYYY">
               <p class="d-none " id="reqOut">This field is required</p>
+              <p class="d-none " id="validOut">Format is not valid</p>
 
               <label for="check" class="check"><i class="fa-solid fa-person "></i> <span>Adults</span></label>
               <input id="check" type="number" class="filter-input" min="1" value="1">
@@ -190,11 +192,15 @@
             <i class="fa-solid fa-envelope"></i>
             <p>Email: mail@mail.com</p>
           </div>
-          <form class="email-form">
+          <form class="email-form"  onsubmit="sendMail(event)">
             <p>Questions? Go ahead, ask them:</p>
-            <input type="text" class="email-inputs" placeholder="Name">
-            <input type="text" class="email-inputs" placeholder="Email">
-            <input type="text" class="email-inputs" placeholder="Message">
+            <input type="text" class="email-inputs" id="nameInput" placeholder="Name" name="fullName">
+            <p class="d-none " id="nameRegister">This field is required</p>
+            <input type="text" class="email-inputs"id="emailInput" placeholder="Email" name="email">
+            <p class="d-none " id="emailRegister" >This field is required</p>
+            <p class="d-none " id="emailValid" >Email is not Valid            </p>
+            <input type="text" class="email-inputs" id="messageInput" placeholder="Message" name="message">
+            <p class="d-none " id="messageRegister">This field is required</p>
             <div class="col-lg-3">
               <button class="btn-submit">Send a Message</button>
             </div>
@@ -206,11 +212,15 @@
         </div>
       </section>
 
+
     </div>
 
     </div>
   </main>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
   <script src="./assets/js/app.js"></script>
+ 
 </body>
 
 </html>
