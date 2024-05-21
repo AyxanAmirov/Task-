@@ -1,0 +1,73 @@
+.main-elem {
+    padding: 0 3.4rem;
+}
+
+.parent-elem {
+    border: 2px solid #cbcbcb;
+}
+
+.left-aside {
+    height: 100vh;
+    background-color: #F1F1F1;
+    padding: 20px 0;
+    overflow-y: scroll;
+}
+
+.head {
+    width: 120px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.filter {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.check {
+    font-size: 14px;
+}
+
+.filter-input {
+    padding: 13px;
+    border: 1px solid #cbcbcb;
+}
+
+.btn-body {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 13px;
+    top: 11px;
+    color: #fff;
+}
+
+.btn-submit {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.btn-submit:hover {
+    background-color: #CCCCCC;
+    color: #000;
+}
+
+.btn-body:hover>.search-icon {
+    color: #000;
+}
+.foot-aside{
+    padding: 15px;
+
+}
+.foot-aside:hover{
+    background-color: #CCCCCC;
+}
