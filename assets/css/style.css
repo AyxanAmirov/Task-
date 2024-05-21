@@ -93,8 +93,34 @@
     margin-top: 20px;
 }
 
-.slider-image {
+.slider-elem {
+    position: relative;
+}
+
+.room-name {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+
+}
+
+.slider-image-parent {
     width: 100%;
+}
+
+.slider-image-child {
+    width: 100%;
+    opacity: .6;
+}
+
+.slider-image-child:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1 !important;
 }
 
 .article {
@@ -119,22 +145,30 @@
     display: flex;
     gap: 5px;
 }
-.contact{
+
+.contact {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-top: 40px;
 }
-.email-form{
+
+.email-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.email-inputs{
+
+.email-inputs {
     padding: 12px;
     border: 1px solid #cbcbcb;
     font-size: 18px;
 }
-.foot{
+
+.foot {
     margin-top: 30px;
+}
+.required{
+    color: red;
+    font-weight: bold;
 }

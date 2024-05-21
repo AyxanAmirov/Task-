@@ -26,19 +26,26 @@
   <main class="container main-elem">
     <div class="d-flex parent-elem">
       <aside class="col-lg-3">
+
         <div class="left-aside">
           <div class="p-15">
             <h3 class="head">Rental from $99</h3>
             <p>per night</p>
             <form class="filter">
 
-              <label for="check" class="check"><i class="fa-solid fa-calendar-days "></i> <span>Check in</span></label>
-              <input id="check" type="text" class="filter-input" placeholder="DDMMYYYY">
-              <label for="check" class="check"><i class="fa-solid fa-calendar-days "></i> <span>Check out</span></label>
-              <input id="check" type="text" class="filter-input" placeholder="DDMMYYYY">
+              <label for="checkIn" class="check"><i class="fa-solid fa-calendar-days "></i> <span>Check
+                  in</span></label>
+              <input id="checkIn" type="text" class="filter-input" placeholder="DDMMYYYY">
+              <p class="d-none " id="reqIn">This field is required</p>
+              <label for="checkOut" class="check"><i class="fa-solid fa-calendar-days "></i> <span>Check
+                  out</span></label>
+              <input id="checkOut" type="text" class="filter-input" placeholder="DDMMYYYY">
+              <p class="d-none " id="reqOut">This field is required</p>
+
               <label for="check" class="check"><i class="fa-solid fa-person "></i> <span>Adults</span></label>
               <input id="check" type="number" class="filter-input" min="1" value="1">
-              <label for="check" class="check"><i class="fa-solid fa-child-reaching"></i></i> <span>Kids</span></label>
+              <label for="check" class="check"><i class="fa-solid fa-child-reaching"></i></i>
+                <span>Kids</span></label>
               <input id="check" type="number" class="filter-input" min="0" value="0">
               <div class="btn-body">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -61,23 +68,30 @@
           </div>
         </div>
 
+
       </aside>
       <section class="col-lg-10 section-body">
         <h2 class="section-head">The Apartment</h2>
         <div class="slider">
-          <img src="./assets/images/livingroom (1).jpg" alt="image" class="slider-image">
+          <div class="slider-elem">
+            <img src="./assets/images/livingroom (1).jpg" alt="image" class="slider-image-parent">
+            <p class="room-name">Living Room</p>
+          </div>
           <div class="d-flex gap-10">
             <div class="col-lg-3">
-              <img src="./assets/images/livingroom (1).jpg" alt="" class="slider-image">
+              <img src="./assets/images/livingroom (1).jpg" alt="" onClick="changeSlider(this.src)"
+                class="slider-image-child active">
             </div>
             <div class="col-lg-3">
-              <img src="./assets/images/diningroom.jpg" alt="" class="slider-image">
+              <img src="./assets/images/diningroom.jpg" alt="" onClick="changeSlider(this.src)"
+                class="slider-image-child">
             </div>
             <div class="col-lg-3">
-              <img src="./assets/images/bedroom.jpg" alt="" class="slider-image">
+              <img src="./assets/images/bedroom.jpg" alt="" onClick="changeSlider(this.src)" class="slider-image-child">
             </div>
             <div class="col-lg-3">
-              <img src="./assets/images/livingroom2.jpg" alt="" class="slider-image">
+              <img src="./assets/images/livingroom2.jpg" alt="" onClick="changeSlider(this.src)"
+                class="slider-image-child">
             </div>
           </div>
         </div>
@@ -187,10 +201,11 @@
           </form>
         </article>
         <div class="foot">
-           <a  href="https://github.com/AyxanAmirov" target="_blank">Povered by <span style="color: red;">Aykhan</span> </a>
+          <a href="https://github.com/AyxanAmirov" target="_blank">Povered by <span style="color: red;">Aykhan</span>
+          </a>
         </div>
       </section>
-      
+
     </div>
 
     </div>
