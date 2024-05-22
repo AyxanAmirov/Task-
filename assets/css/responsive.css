@@ -6,7 +6,9 @@
         bottom: 0;
         height: 100vh;
     }
-
+.close-btn{
+    display: block;
+}
     .menu {
         display: flex;
         position: relative;
