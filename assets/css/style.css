@@ -12,10 +12,12 @@
     font-size: 23px;
     font-weight: 400;
 }
-.toggle{
+
+.toggle {
     color: #fff;
     font-size: 25px;
 }
+
 .parent-elem {
     border: 1px solid #cbcbcb;
 }
@@ -23,7 +25,6 @@
 .left-aside {
 
     height: 100vh;
-    max-height: 850px;
     position: fixed;
     background-color: #F1F1F1;
     padding: 20px 0;
@@ -201,12 +202,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 2; 
-  }
-  
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+}
 
-  
-  .overlay.active {
-    display: block; 
-  }
+
+
+.overlay.active {
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}

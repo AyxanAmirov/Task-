@@ -15,8 +15,8 @@ const nameRegister = document.getElementById("nameRegister");
 const emailRegister = document.getElementById("emailRegister");
 const messageRegister = document.getElementById("messageRegister");
 const emailValid = document.getElementById("emailValid");
- 
-
+const closeBtn = document.querySelector(".close-btn")
+const overlay = document.querySelector(".overlay")
 
 
 function changeSlider(img) {
@@ -122,7 +122,7 @@ function sendMail(e) {
         )
         .then(
           (response) => {
-            console.log("SUCCESS!", response.status, response.text);
+            alert("Mail göndərildi");
           },
           (error) => {
             console.log("FAILED...", error);
@@ -169,7 +169,7 @@ function updateScreenWidth(){
     mainElem.classList.remove("container")
   }else{
     mainElem.classList.add("container")
-    document.querySelector(".overlay").classList.remove("active");
+    overlay.classList.remove("active");
 
   }
 }
@@ -180,7 +180,16 @@ const menuBar = document.querySelector(".toggle")
 const asidePanel = document.querySelector(".aside-panel")
 menuBar.addEventListener("click",()=>{
    asidePanel.classList.toggle("d-block")
-   document.querySelector(".overlay").classList.toggle("active");
+   overlay.classList.toggle("active");
 })
 
+closeBtn.addEventListener("click",()=>{
+  asidePanel.classList.remove("d-block")
+  overlay.classList.remove("active");
+
+})
+overlay.addEventListener("click",()=>{
+  asidePanel.classList.remove("d-block")
+  overlay.classList.remove("active");
+})
 
