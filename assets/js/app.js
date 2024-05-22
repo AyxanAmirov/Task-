@@ -45,7 +45,15 @@ function changeSlider(img) {
   });
 }
 let isValid = true;
-
+checkInInput.addEventListener("keyup",()=>{
+  
+  checkInError.className = "d-none";
+  
+})
+checkOutInput.addEventListener("keyup",()=>{
+  checkOutError.className = "d-none";
+  
+})
 filterForm.addEventListener("submit", (e) => {
   let datePattern = /^\d{2}\d{2}\d{4}$/;
 
@@ -161,7 +169,18 @@ function sendMail(e) {
     messageRegister.className = "d-none";
   }
 }
+emailInput.addEventListener("keyup",()=>{
+  emailRegister.className = "d-none";
 
+})
+nameInput.addEventListener("keyup",()=>{
+  nameRegister.className = "d-none";
+
+})
+messageInput.addEventListener("keyup",()=>{
+  messageRegister.className = "d-none";
+
+})
 
 window.addEventListener('resize', updateScreenWidth);
 const mainElem = document.querySelector(".main-elem")
