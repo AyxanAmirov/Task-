@@ -51,6 +51,8 @@ filterForm.addEventListener("submit", (e) => {
 
   if (checkInInput.value.trim() == "") {
     checkInError.className = "required";
+    checkInValid.className = "d-none";
+
   } else {
     if (datePattern.test(checkInInput.value)) {
       checkInValid.className = "d-none";
@@ -61,6 +63,7 @@ filterForm.addEventListener("submit", (e) => {
   }
   if (checkOutInput.value.trim() == "") {
     checkOutError.className = "required";
+    checkOutValid.className = "d-none";
   } else {
     if (datePattern.test(checkOutInput.value)) {
       checkOutValid.className = "d-none";
